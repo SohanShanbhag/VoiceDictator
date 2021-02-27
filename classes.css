@@ -1,5 +1,6 @@
 .button
 {
+  border-radius: 5px;
   border: none;
   background-color:mediumaquamarine;
   color: black;
@@ -20,6 +21,29 @@ button:hover
     background-color: black;
 }
 
+.button1
+{
+  border-radius: 5px;
+  border: none;
+  background-color:mediumaquamarine;
+  color: black;
+  padding: 15px 3px;
+  text-align: center;
+  text-decoration:underline;
+  display: inline-block;
+  /* font-size: 30px; */
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 50px 610px;
+  cursor: pointer;
+  width: 300px; 
+  /*height: 80px; */
+}
+button1:hover
+{
+    color:white;
+    background-color: black;
+}
+
 input[type="text"], input[type="tel"], input[type="email"], select
 {
   width: 30%;
@@ -28,4 +52,6 @@ input[type="text"], input[type="tel"], input[type="email"], select
   margin-bottom: 10px;
   border: 1px solid #dadada;
   color: #888;
+  border-radius: 10px;
 }
+

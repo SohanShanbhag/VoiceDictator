@@ -15,6 +15,19 @@
   </head>
   <body style="background-color: yellow;">
     <img src="images/logo.png" alt="" style="margin-left: -100px; margin-top:-50px">
-    <input placeholder="Enter the text to be dictated" type="text" id="text" name="text">
+    <br>
+    <input placeholder="Enter the text to be dictated" type="text" id="text1" name="text" style="margin-left: 500px">
+    <button type="submit" class="button1" style="margin-top: 355px;margin-left:590px" onclick="Speak()">Speak!</button>
+    <script>
+      function Speak(){
+        var transcript = document.getElementById("text1").value;
+        const response = new SpeechSynthesisUtterance();
+
+        response.rate = 1;
+        response.text = transcript;
+        response.lang = 'en';
+        window.speechSynthesis.speak(response);
+      }
+    </script>
   </body>
 </html>
